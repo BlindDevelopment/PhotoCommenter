@@ -71,13 +71,6 @@ PhotoCommenterFrame::PhotoCommenterFrame(wxFrame *frame, const wxString& title)
         sep = _T("/");
     #endif
 
-    wxDateTime now = wxDateTime::Today();
-    int today = wxAtoi(now.Format(_T("%y%m%d")));
-    int checkdate = 150213;
-    if (today > checkdate)
-    {
-        return;
-    }
 
 #if wxUSE_MENUS
     // create a menu bar
